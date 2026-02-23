@@ -14,7 +14,7 @@ function OptionScalperPromo() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid items-center gap-8 overflow-hidden rounded-card bg-gradient-to-r from-primary/15 via-background-card to-background-card p-6 shadow-card md:grid-cols-2"
+          className="grid items-center gap-8 overflow-hidden rounded-card bg-gradient-to-r from-primary/18 via-background-card/80 to-background-card/70 p-6 shadow-card md:grid-cols-2"
         >
           <div className="space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Option Scalper</p>

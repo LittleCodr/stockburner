@@ -13,7 +13,7 @@ function SocialBanner() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="rounded-card bg-primary/15 p-6 shadow-card"
+          className="rounded-card bg-gradient-to-r from-primary/14 via-background-card/70 to-background-card/60 p-6 shadow-card"
         >
           <div className="grid gap-4 md:grid-cols-[1.2fr,1fr] md:items-center">
             <SectionHeading

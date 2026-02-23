@@ -17,7 +17,7 @@ function FreeCourseBanner() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="glow-hover grid items-center gap-6 overflow-hidden rounded-card border border-primary/30 bg-primary/10 p-6 shadow-card sm:grid-cols-[1.1fr,1.5fr]"
+          className="glow-hover glass-surface grid items-center gap-6 overflow-hidden rounded-card border border-primary/40 bg-gradient-to-r from-primary/15 via-background-card/70 to-background-card/60 p-6 shadow-card sm:grid-cols-[1.1fr,1.5fr]"
         >
           <div className="relative h-full w-full overflow-hidden rounded-xl">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-transparent to-accent/20" aria-hidden />

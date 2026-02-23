@@ -18,7 +18,7 @@ function LearningDiagramSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 rounded-card border border-white/5 bg-background-card/60 p-6 shadow-card sm:grid-cols-3"
+          className="relative mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 rounded-card border border-white/5 bg-gradient-to-br from-background-card/80 via-background-card/60 to-background-card/50 p-6 shadow-card sm:grid-cols-3"
         >
           <div
             className="pointer-events-none absolute inset-4 rounded-card border border-white/5" aria-hidden

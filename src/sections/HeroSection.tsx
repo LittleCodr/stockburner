@@ -13,8 +13,12 @@ function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden bg-gradient-to-b from-background-primary via-background-primary to-background-secondary section-padding"
+      className="relative overflow-hidden section-padding bg-[radial-gradient(circle_at_20%_20%,rgba(34,197,94,0.2),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(163,230,53,0.12),transparent_30%),linear-gradient(120deg,rgba(255,255,255,0.02),rgba(255,255,255,0))]"
     >
+      <div className="pointer-events-none absolute inset-0 opacity-60" aria-hidden>
+        <div className="absolute inset-0 bg-hero-mesh" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.05),transparent_35%)]" />
+      </div>
       <div className="container-wide relative grid items-center gap-10 lg:grid-cols-2">
         <motion.div variants={staggerChildren} initial="hidden" animate="show" className="space-y-5">
           <motion.div variants={fadeUp} className="flex items-center gap-3 text-primary">
@@ -24,9 +28,11 @@ function HeroSection() {
 
           <motion.h1
             variants={fadeUp}
-            className="text-4xl font-extrabold leading-[1.1] text-white sm:text-5xl lg:text-6xl"
+            className="text-4xl font-extrabold leading-[1.08] text-white drop-shadow-[0_10px_35px_rgba(34,197,94,0.25)] sm:text-5xl lg:text-6xl"
           >
-            STOCK BURNER
+            <span className="bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
+              STOCK BURNER
+            </span>
           </motion.h1>
 
           <motion.p variants={fadeUp} className="max-w-2xl text-lg text-text-secondary">
@@ -36,7 +42,7 @@ function HeroSection() {
 
           <motion.div
             variants={fadeUp}
-            className="glow-hover flex items-center gap-3 rounded-card border border-primary/30 bg-primary/5 p-4"
+            className="glow-hover glass-surface flex items-center gap-3 rounded-card border border-primary/30 bg-background-card/70 p-4 shadow-card"
           >
             <Shield className="text-accent" />
             <div>
@@ -49,8 +55,8 @@ function HeroSection() {
           </motion.div>
 
           <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4">
-            <Button size="lg" className="shadow-glow">Start Learning</Button>
-            <Button variant="secondary" size="lg" className="gap-2">
+            <Button size="lg" className="shadow-glow sheen-line">Start Learning</Button>
+            <Button variant="secondary" size="lg" className="gap-2 sheen-line">
               <Play size={18} />
               Watch Demo
             </Button>
@@ -83,12 +89,12 @@ function HeroSection() {
             <div className="absolute -left-6 -top-6 h-20 w-20 rounded-full bg-primary/20 blur-2xl" aria-hidden />
             <div className="absolute -right-6 top-10 h-24 w-24 rounded-full bg-accent/20 blur-2xl" aria-hidden />
             <motion.div
-              className="overflow-hidden rounded-[28px] border border-white/10 bg-background-card/70 shadow-card"
+              className="overflow-hidden rounded-[28px] border border-white/10 bg-background-card/70 shadow-card ring-1 ring-white/5"
               initial={{ y: 12 }}
               animate={{ y: [12, -8, 12] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             >
-              <img src={instructorImg} alt="Instructor" className="h-full w-full object-cover" />
+              <img src={instructorImg} alt="Instructor" className="h-full w-full object-cover saturate-110" />
             </motion.div>
 
             <motion.div

@@ -17,8 +17,10 @@ const sizeStyles: Record<NonNullable<ButtonProps["size"]>, string> = {
 };
 
 const variantStyles: Record<NonNullable<ButtonProps["variant"]>, string> = {
-  primary: "bg-primary text-white hover:brightness-110 shadow-glow",
-  secondary: "bg-background-card text-white hover:shadow-glow border border-white/10",
+  primary:
+    "relative overflow-hidden bg-gradient-to-r from-primary via-emerald-400 to-primary text-white shadow-glow hover:shadow-[0_20px_60px_rgba(34,197,94,0.45)]",
+  secondary:
+    "bg-background-card/70 text-white hover:shadow-glow border border-white/10 backdrop-blur",
   ghost: "bg-transparent text-white border border-white/20 hover:border-primary hover:text-primary",
 };
 

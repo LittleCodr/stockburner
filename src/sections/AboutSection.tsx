@@ -34,8 +34,8 @@ function AboutSection() {
         >
           <div className="absolute -left-6 top-6 h-24 w-24 rounded-full bg-primary/25 blur-2xl" aria-hidden />
           <div className="absolute right-2 -top-4 h-20 w-20 rounded-full bg-accent/25 blur-2xl" aria-hidden />
-          <div className="overflow-hidden rounded-card border border-white/10 shadow-card">
-            <img src={aboutImg} alt="About Dinesh" className="h-full w-full object-cover" />
+          <div className="overflow-hidden rounded-card border border-white/10 bg-background-card/70 shadow-card ring-1 ring-white/5">
+            <img src={aboutImg} alt="About Dinesh" className="h-full w-full object-cover saturate-110" />
           </div>
         </motion.div>
       </div>

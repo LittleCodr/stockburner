@@ -15,7 +15,7 @@ function LearnFromSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="glow-hover grid items-center gap-8 rounded-card border border-white/5 bg-background-card/70 p-6 shadow-card md:grid-cols-[1fr,1.1fr]"
+          className="glow-hover glass-surface grid items-center gap-8 rounded-card border border-white/5 bg-gradient-to-r from-background-card/80 via-background-card/70 to-background-card/60 p-6 shadow-card md:grid-cols-[1fr,1.1fr]"
         >
           <motion.div
             className="relative overflow-hidden rounded-card"
