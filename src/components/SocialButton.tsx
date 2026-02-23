@@ -1,9 +1,9 @@
-import type { Icon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { cn } from "../utils/cn";
 
 interface SocialButtonProps {
   label: string;
-  icon: Icon;
+  icon: LucideIcon;
   href: string;
 }
 

@@ -1,4 +1,4 @@
-import type { Icon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import {
   Instagram,
   Youtube,
@@ -11,7 +11,7 @@ import {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: Icon;
+  icon: LucideIcon;
 }
 
 export const socialLinks: SocialLink[] = [
