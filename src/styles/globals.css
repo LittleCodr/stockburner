@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 15% 20%, rgba(34, 197, 94, 0.14), transparent 30%),
+    radial-gradient(circle at 85% 10%, rgba(163, 230, 53, 0.1), transparent 28%),
+    #050a0f;
+  min-height: 100vh;
+}
+
+.glow-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.glow-hover:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 16px 45px rgba(34, 197, 94, 0.35);
+}
+
+.bg-noise {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.ring-glow {
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.35), 0 15px 40px rgba(34, 197, 94, 0.25);
+}
+
+.grid-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.section-padding {
+  padding: clamp(3rem, 5vw, 4.5rem) 1.25rem;
+}
+
+.container-wide {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+.gradient-border {
+  background: linear-gradient(120deg, rgba(34, 197, 94, 0.35), rgba(163, 230, 53, 0.35));
+  padding: 1px;
+  border-radius: 20px;
+}
+
+.button-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.button-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.22), transparent 42%);
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.button-cta:hover::after {
+  opacity: 1;
+}

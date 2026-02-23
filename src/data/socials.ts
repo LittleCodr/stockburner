@@ -1,0 +1,41 @@
+import type { Icon } from "lucide-react";
+import {
+  Instagram,
+  Youtube,
+  Linkedin,
+  MessageCircle,
+  Facebook,
+  ShieldCheck,
+} from "lucide-react";
+
+export interface SocialLink {
+  label: string;
+  href: string;
+  icon: Icon;
+}
+
+export const socialLinks: SocialLink[] = [
+  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
+  { label: "YouTube", href: "https://youtube.com", icon: Youtube },
+  { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
+  { label: "Telegram", href: "https://t.me", icon: MessageCircle },
+  { label: "Facebook", href: "https://facebook.com", icon: Facebook },
+];
+
+export interface ScamChannel {
+  platform: string;
+  handle: string;
+  verified: boolean;
+}
+
+export const scamChannels: ScamChannel[] = [
+  { platform: "YouTube", handle: "@StockBurnerOfficial", verified: true },
+  { platform: "Telegram", handle: "@StockBurnerHQ", verified: true },
+  { platform: "Instagram", handle: "@stockburner", verified: true },
+  { platform: "LinkedIn", handle: "@dinesh-stockburner", verified: true },
+];
+
+export const scamNote =
+  "We never ask for money over chats. Only trust the official handles listed above.";
+
+export const trustedBadges = [ShieldCheck];
