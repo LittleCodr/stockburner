@@ -67,7 +67,7 @@ function ProFeedbackSection() {
           className="mt-10 grid gap-5 md:grid-cols-2"
         >
           {feedback.map((item) => (
-            <GlowCard key={item.name} className="relative" neon>
+            <GlowCard key={item.name} className="relative">
               {/* Quote icon */}
               <Quote className="absolute right-5 top-5 text-primary/30" size={28} />
 
