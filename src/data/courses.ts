@@ -1,81 +1,67 @@
-export type CourseLevel = "Workshop" | "Strategy" | "Advanced" | "Basic";
+export type CourseLevel = "Live" | "Free" | "Private" | "Earn" | "Premium";
+
+export interface CourseSchedule {
+  label: string;
+  items: string[];
+}
 
 export interface CourseItem {
   id: string;
   tag: CourseLevel;
   title: string;
-  price: string;
-  discountLabel: string;
-  validity: string;
-  likes: string;
-  thumbnail: string;
+  description: string;
+  features: string[];
+  schedules?: CourseSchedule[];
 }
 
 export const courses: CourseItem[] = [
   {
-    id: "option-scalper",
-    tag: "Strategy",
-    title: "Option Scalper Masterclass",
-    price: "₹699",
-    discountLabel: "74% OFF",
-    validity: "Lifetime access",
-    likes: "18.2k",
-    thumbnail:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80",
+    id: "live-classes",
+    tag: "Live",
+    title: "Live classes",
+    description: "Trade Guru hosts real-time trading rooms with screen-share, Q&A, and execution drills.",
+    features: ["Daily scalping rooms", "Voice + screen breakdowns", "Post-trade debriefs"],
+    schedules: [
+      {
+        label: "Previous batches",
+        items: ["Batch Alpha (Jan) — completed", "Batch Blitz (Feb) — completed"],
+      },
+      {
+        label: "Ongoing",
+        items: ["Batch Titan — live weekdays 9:15-11:00"],
+      },
+      {
+        label: "Upcoming",
+        items: ["Batch Nova — starts Mar 10", "Batch Pulse — starts Apr 2"],
+      },
+    ],
   },
   {
-    id: "intraday-pro",
-    tag: "Advanced",
-    title: "Intraday Momentum Pro",
-    price: "₹899",
-    discountLabel: "68% OFF",
-    validity: "Lifetime access",
-    likes: "12.4k",
-    thumbnail:
-      "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80",
+    id: "free-course",
+    tag: "Free",
+    title: "Free course",
+    description: "Starter pack that covers the complete Trade Guru basics with checklists and PDFs.",
+    features: ["Lifetime access", "Downloadable notes", "Live Q&A drops"],
   },
   {
-    id: "trap-finder",
-    tag: "Workshop",
-    title: "Trapping Concepts Workshop",
-    price: "₹499",
-    discountLabel: "62% OFF",
-    validity: "6 months",
-    likes: "9.1k",
-    thumbnail:
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
+    id: "private-group",
+    tag: "Private",
+    title: "Private group",
+    description: "Tight-knit community with curated setups, intraday alerts, and accountability threads.",
+    features: ["Intraday levels", "Accountability pods", "Voice huddles"],
   },
   {
-    id: "scalping-101",
-    tag: "Basic",
-    title: "Scalping 101 Essentials",
-    price: "₹299",
-    discountLabel: "50% OFF",
-    validity: "3 months",
-    likes: "7.5k",
-    thumbnail:
-      "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?auto=format&fit=crop&w=900&q=80",
+    id: "earn-with-us",
+    tag: "Earn",
+    title: "Earn with us",
+    description: "Partner program to co-host streams, share playbooks, and monetize your edge together.",
+    features: ["Revenue share", "Coaching slots", "Signal co-branding"],
   },
   {
-    id: "liquidity-zones",
-    tag: "Advanced",
-    title: "Liquidity Zones Blueprint",
-    price: "₹649",
-    discountLabel: "66% OFF",
-    validity: "Lifetime access",
-    likes: "10.8k",
-    thumbnail:
-      "https://images.unsplash.com/photo-1478826160983-94e0d4eb7808?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    id: "psychology-mindset",
-    tag: "Strategy",
-    title: "Psychology & Mindset Lab",
-    price: "₹599",
-    discountLabel: "58% OFF",
-    validity: "Lifetime access",
-    likes: "6.3k",
-    thumbnail:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
+    id: "free-premium-group",
+    tag: "Premium",
+    title: "Free primium group",
+    description: "Zero-cost premium room with curated trade ideas and moderated chat for serious traders.",
+    features: ["Premium trade ideas", "Moderated chat", "Weekly office hours"],
   },
 ];
