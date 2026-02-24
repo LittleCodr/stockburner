@@ -6,13 +6,18 @@ export interface PartnerItem {
 
 export const partners: PartnerItem[] = [
   {
-    name: "Dhan",
-    tagline: "Trusted demat partner for active scalpers",
-    logoText: "DHAN",
+    name: "Delta",
+    tagline: "Lightning-fast execution for live scalps",
+    logoText: "DELTA",
   },
   {
-    name: "India Delta",
-    tagline: "Options analytics for precision entries",
-    logoText: "INDIA DELTA",
+    name: "Alice Blue",
+    tagline: "Clean charts and low-latency order flow",
+    logoText: "ALICE BLUE",
+  },
+  {
+    name: "Angel One",
+    tagline: "Reliable broker stack for intraday pros",
+    logoText: "ANGEL ONE",
   },
 ];

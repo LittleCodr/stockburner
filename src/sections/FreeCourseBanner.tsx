@@ -6,7 +6,13 @@ import Badge from "../components/Badge";
 const bookImg =
   "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=80";
 
-const points = ["Lifetime access", "Downloadable notes", "Live Q&A"];
+const points = [
+  "Live classes & batches",
+  "Free course access",
+  "Private group",
+  "Earn with us",
+  "Free premium group",
+];
 
 function FreeCourseBanner() {
   return (

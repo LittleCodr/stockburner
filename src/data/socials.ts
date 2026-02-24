@@ -15,10 +15,14 @@ export interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/trade.guru9?igsh=ajk4dGNtZjFvajVp&utm_source=qr",
+    icon: Instagram,
+  },
+  { label: "Telegram", href: "https://t.me/optionguruji9", icon: MessageCircle },
   { label: "YouTube", href: "https://youtube.com", icon: Youtube },
   { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-  { label: "Telegram", href: "https://t.me", icon: MessageCircle },
   { label: "Facebook", href: "https://facebook.com", icon: Facebook },
 ];
 

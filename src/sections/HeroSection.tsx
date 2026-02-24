@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Play, Shield } from "lucide-react";
+import { Instagram, Play, Send, Shield } from "lucide-react";
 import Badge from "../components/Badge";
 import Button from "../components/Button";
 import StatPill from "../components/StatPill";
@@ -62,15 +62,25 @@ function HeroSection() {
             </Button>
           </motion.div>
 
-          <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3 text-sm text-white/70">
-            <div className="flex items-center gap-2 rounded-btn bg-white/5 px-3 py-2">
-              <span className="h-5 w-16 rounded-md bg-gradient-to-r from-primary to-blue-300" aria-hidden />
-              <span>App Store</span>
-            </div>
-            <div className="flex items-center gap-2 rounded-btn bg-white/5 px-3 py-2">
-              <span className="h-5 w-16 rounded-md bg-gradient-to-r from-green-400 to-green-600" aria-hidden />
-              <span>Play Store</span>
-            </div>
+          <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3 text-sm text-white/80">
+            <a
+              href="https://www.instagram.com/trade.guru9?igsh=ajk4dGNtZjFvajVp&utm_source=qr"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 rounded-btn border border-white/10 bg-white/5 px-3 py-2 transition hover:border-primary/50 hover:text-white"
+            >
+              <Instagram size={16} className="text-primary" />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://t.me/optionguruji9"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 rounded-btn border border-white/10 bg-white/5 px-3 py-2 transition hover:border-primary/50 hover:text-white"
+            >
+              <Send size={16} className="text-accent" />
+              <span>Telegram</span>
+            </a>
           </motion.div>
 
           <motion.div variants={fadeUp} className="grid grid-cols-2 gap-3 sm:grid-cols-4">
