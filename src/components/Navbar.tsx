@@ -48,7 +48,7 @@ function Navbar() {
       )}
     >
       <div className="container-wide flex items-center justify-between px-4 py-3">
-        <Link to="/" className="flex items-center gap-3" aria-label="StockBurner home">
+        <Link to="/" className="flex items-center gap-3" aria-label="Trade Guru home">
           <Logo />
         </Link>
 

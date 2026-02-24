@@ -33,10 +33,10 @@ export interface ScamChannel {
 }
 
 export const scamChannels: ScamChannel[] = [
-  { platform: "YouTube", handle: "@StockBurnerOfficial", verified: true },
-  { platform: "Telegram", handle: "@StockBurnerHQ", verified: true },
-  { platform: "Instagram", handle: "@stockburner", verified: true },
-  { platform: "LinkedIn", handle: "@dinesh-stockburner", verified: true },
+  { platform: "YouTube", handle: "@TradeGuruOfficial", verified: true },
+  { platform: "Telegram", handle: "@TradeGuruHQ", verified: true },
+  { platform: "Instagram", handle: "@tradeguru", verified: true },
+  { platform: "LinkedIn", handle: "@trade-guru", verified: true },
 ];
 
 export const scamNote =

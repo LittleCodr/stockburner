@@ -13,7 +13,7 @@ function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden section-padding bg-[radial-gradient(circle_at_20%_20%,rgba(34,197,94,0.2),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(163,230,53,0.12),transparent_30%),linear-gradient(120deg,rgba(255,255,255,0.02),rgba(255,255,255,0))]"
+      className="relative overflow-hidden section-padding bg-[radial-gradient(circle_at_20%_20%,rgba(34,197,94,0.2),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(163,230,53,0.12),transparent_30%),linear-gradient(120deg,rgba(255,255,255,0.02),rgba(255,255,255,0))] perspective-[1400px] transform-gpu"
     >
       <div className="pointer-events-none absolute inset-0 opacity-60" aria-hidden>
         <div className="absolute inset-0 bg-hero-mesh" />
@@ -23,7 +23,7 @@ function HeroSection() {
         <motion.div variants={staggerChildren} initial="hidden" animate="show" className="space-y-5">
           <motion.div variants={fadeUp} className="flex items-center gap-3 text-primary">
             <Badge color="blue">Join</Badge>
-            <span className="text-sm font-semibold text-text-secondary">Daily live trading with Dinesh</span>
+            <span className="text-sm font-semibold text-text-secondary">Daily live trading with Trade Guru</span>
           </motion.div>
 
           <motion.h1
@@ -31,18 +31,19 @@ function HeroSection() {
             className="text-4xl font-extrabold leading-[1.08] text-white drop-shadow-[0_10px_35px_rgba(34,197,94,0.25)] sm:text-5xl lg:text-6xl"
           >
             <span className="bg-gradient-to-r from-white via-primary to-accent bg-clip-text text-transparent">
-              STOCK BURNER
+              TRADE GURU
             </span>
           </motion.h1>
 
           <motion.p variants={fadeUp} className="max-w-2xl text-lg text-text-secondary">
-            Master option scalping with India&apos;s trusted educator. Precision plays, verified results, and
-            a disciplined process for serious traders.
+            Master option scalping with Trade Guru: cinematic breakdowns, verified results, and a disciplined
+            process built for serious traders.
           </motion.p>
 
           <motion.div
             variants={fadeUp}
             className="glow-hover glass-surface flex items-center gap-3 rounded-card border border-primary/30 bg-background-card/70 p-4 shadow-card"
+            whileHover={{ rotateX: 6, rotateY: -6, translateZ: 12, transition: { type: "spring", stiffness: 140 } }}
           >
             <Shield className="text-accent" />
             <div>
@@ -54,7 +55,11 @@ function HeroSection() {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4">
+          <motion.div
+            variants={fadeUp}
+            className="flex flex-wrap items-center gap-4"
+            whileHover={{ rotateX: -4, rotateY: 5, translateZ: 10, transition: { type: "spring", stiffness: 110 } }}
+          >
             <Button size="lg" className="shadow-glow sheen-line">Start Learning</Button>
             <Button variant="secondary" size="lg" className="gap-2 sheen-line">
               <Play size={18} />

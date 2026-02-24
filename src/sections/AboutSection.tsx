@@ -17,13 +17,13 @@ function AboutSection() {
           className="space-y-4"
         >
           <SectionHeading
-            eyebrow="About Dinesh"
-            title="From scalper to mentor"
-            description="Dinesh has guided thousands of traders with a process-driven approach focused on conviction, risk, and discipline."
+            eyebrow="About Trade Guru"
+            title="From scalper to mentor collective"
+            description="Trade Guru guides thousands of traders with a process-driven approach focused on conviction, risk, and discipline."
           />
           <p className="text-base text-text-secondary">
-            After years of intraday trading, Dinesh distilled his playbook into structured modules, daily checklists,
-            and live market drills. Learn the exact frameworks behind his consistency.
+            After years of intraday trading, the Trade Guru playbook became structured modules, daily checklists, and
+            live market drills. Learn the exact frameworks behind our consistency.
           </p>
         </motion.div>
         <motion.div
@@ -35,7 +35,7 @@ function AboutSection() {
           <div className="absolute -left-6 top-6 h-24 w-24 rounded-full bg-primary/25 blur-2xl" aria-hidden />
           <div className="absolute right-2 -top-4 h-20 w-20 rounded-full bg-accent/25 blur-2xl" aria-hidden />
           <div className="overflow-hidden rounded-card border border-white/10 bg-background-card/70 shadow-card ring-1 ring-white/5">
-            <img src={aboutImg} alt="About Dinesh" className="h-full w-full object-cover saturate-110" />
+            <img src={aboutImg} alt="About Trade Guru" className="h-full w-full object-cover saturate-110" />
           </div>
         </motion.div>
       </div>

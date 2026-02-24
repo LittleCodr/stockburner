@@ -24,8 +24,8 @@ function Footer() {
             </Link>
           ))}
         </div>
-        <p className="text-sm text-text-secondary">Contact: support@stockburner.com</p>
-        <p className="text-xs text-text-secondary">© {new Date().getFullYear()} StockBurner. All rights reserved.</p>
+        <p className="text-sm text-text-secondary">Contact: support@tradeguru.com</p>
+        <p className="text-xs text-text-secondary">© {new Date().getFullYear()} Trade Guru. All rights reserved.</p>
       </div>
     </footer>
   );

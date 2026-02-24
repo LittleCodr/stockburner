@@ -33,7 +33,7 @@ function FreeCourseBanner() {
             <Badge color="blue">Free Trading Course</Badge>
             <h3 className="text-2xl font-bold text-white">Complete starter kit for new scalpers</h3>
             <p className="text-text-secondary">
-              Get the exact PDF course Dinesh shares with his mentees. Actionable playbooks, checklists, and
+              Get the exact PDF course Trade Guru shares with the community. Actionable playbooks, checklists, and
               cheat-sheets to execute faster.
             </p>
             <ul className="grid gap-2 text-sm text-white/80 sm:grid-cols-2">

@@ -28,12 +28,12 @@ function LearnFromSection() {
           </motion.div>
           <div className="space-y-4">
             <SectionHeading
-              eyebrow="Learn from Dinesh"
+              eyebrow="Learn with Trade Guru"
               title="Mentorship built for real market conditions"
               description="Structured lessons, live breakdowns, and rapid execution drills to sharpen your edge."
             />
             <p className="text-base text-text-secondary">
-              Follow the same workflow Dinesh uses daily: pre-market prep, scalping setups, and trade journaling. Every
+              Follow the workflow Trade Guru runs daily: pre-market prep, scalping setups, and trade journaling. Every
               module is actionable and paired with risk-first execution.
             </p>
             <Button className="shadow-glow">Start Learning</Button>

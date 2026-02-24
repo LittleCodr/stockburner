@@ -17,8 +17,8 @@ function SocialBanner() {
         >
           <div className="grid gap-4 md:grid-cols-[1.2fr,1fr] md:items-center">
             <SectionHeading
-              title="Follow Dinesh on every channel"
-              description="Stay updated with live sessions, trade recaps, and announcements."
+              title="Follow Trade Guru everywhere"
+              description="Stay updated with live sessions, trade recaps, and wild new drops."
             />
             <motion.div
               variants={staggerChildren}

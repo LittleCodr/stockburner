@@ -18,7 +18,7 @@ function OptionScalperPromo() {
         >
           <div className="space-y-4">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Option Scalper</p>
-            <h3 className="text-3xl font-bold text-white">Trade the exact setups Dinesh uses daily</h3>
+            <h3 className="text-3xl font-bold text-white">Trade the exact setups Trade Guru runs daily</h3>
             <p className="text-text-secondary">
               Live scalping drills, post-trade debriefs, and advanced risk stacking. Build confidence by following
               the workflow that has produced consistent results.
