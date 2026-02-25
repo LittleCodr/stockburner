@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Instagram, Play, Send, Shield, TrendingUp, TrendingDown, Activity } from "lucide-react";
+import { Instagram, Play, Send, Shield, TrendingUp } from "lucide-react";
 import Badge from "../components/Badge";
 import Button from "../components/Button";
 import StatPill from "../components/StatPill";
@@ -8,18 +8,6 @@ import { fadeUp, staggerChildren } from "../hooks/useReveal";
 
 const instructorImg =
   "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=960&q=80";
-
-// Ticker tape data
-const ticker = [
-  { symbol: "NIFTY", price: "24,150.50", change: "+2.3%", up: true },
-  { symbol: "BANKNIFTY", price: "51,230.75", change: "+1.8%", up: true },
-  { symbol: "SENSEX", price: "79,886.10", change: "-0.4%", up: false },
-  { symbol: "RELIANCE", price: "2,940.00", change: "+3.1%", up: true },
-  { symbol: "TCS", price: "4,215.80", change: "-0.7%", up: false },
-  { symbol: "INFY", price: "1,820.00", change: "+1.2%", up: true },
-  { symbol: "HDFCBANK", price: "1,680.50", change: "+0.9%", up: true },
-  { symbol: "WIPRO", price: "455.20", change: "-1.1%", up: false },
-];
 
 function HeroSection() {
   return (
@@ -32,24 +20,7 @@ function HeroSection() {
       <div className="orb orb-blue absolute -right-16 top-1/3 h-72 w-72 opacity-40" aria-hidden />
       <div className="orb orb-lime absolute bottom-20 left-1/3 h-48 w-48 opacity-30" aria-hidden />
 
-      {/* Ticker Tape */}
-      <div className="absolute top-[4.5rem] inset-x-0 border-y border-primary/10 bg-background-primary/60 backdrop-blur-sm py-2 z-20 overflow-hidden">
-        <div className="ticker-wrap">
-          <div className="ticker-inner">
-            {[...ticker, ...ticker].map((item, i) => (
-              <span key={i} className="inline-flex items-center gap-2 mx-6 text-xs font-mono font-semibold">
-                <Activity size={10} className="text-primary/60" />
-                <span className="text-white/50 uppercase tracking-widest">{item.symbol}</span>
-                <span className="text-white">{item.price}</span>
-                <span className={`flex items-center gap-0.5 ${item.up ? "text-primary" : "text-red-400"}`}>
-                  {item.up ? <TrendingUp size={10} /> : <TrendingDown size={10} />}
-                  {item.change}
-                </span>
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
+
 
       <div className="container-wide relative z-10 grid items-center gap-12 pt-10 lg:grid-cols-2">
         <motion.div variants={staggerChildren} initial="hidden" animate="show" className="space-y-6">
