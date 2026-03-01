@@ -4,7 +4,7 @@ import { fadeUp } from "../hooks/useReveal";
 import { Zap, BarChart3, Trophy, Clock } from "lucide-react";
 
 const promoImg =
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1000&q=80";
+  "/logo.png";
 
 const features = [
   { icon: Zap, label: "Live scalping drills" },

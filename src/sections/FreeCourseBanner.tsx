@@ -5,7 +5,7 @@ import Badge from "../components/Badge";
 import { CheckCircle2 } from "lucide-react";
 
 const bookImg =
-  "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=80";
+  "/logo.png";
 
 const points = [
   "Live classes & batches",

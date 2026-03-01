@@ -5,7 +5,7 @@ import SectionHeading from "../components/SectionHeading";
 import { CheckCircle2, Video, Target, BookMarked } from "lucide-react";
 
 const illustration =
-  "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80";
+  "/logo.png";
 
 const pillars = [
   { icon: Video, text: "Live daily sessions" },
