@@ -11,7 +11,7 @@ const points = [
   "Live classes & batches",
   "Free course access",
   "Private group membership",
-  "Earn with us program",
+  "Earn with us (Coming Soon)",
   "Free premium group",
   "Daily market analysis",
 ];

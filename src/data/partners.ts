@@ -2,6 +2,7 @@ export interface PartnerItem {
   name: string;
   tagline: string;
   logoText: string;
+  link?: string;
 }
 
 export const partners: PartnerItem[] = [
@@ -14,6 +15,7 @@ export const partners: PartnerItem[] = [
     name: "Alice Blue",
     tagline: "Clean charts and low-latency order flow",
     logoText: "ALICE BLUE",
+    link: "https://ekyc.aliceblueonline.com/?source=WMUM2020",
   },
   {
     name: "Angel One",

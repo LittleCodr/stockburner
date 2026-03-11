@@ -11,6 +11,7 @@ export interface CourseItem {
   title: string;
   description: string;
   features: string[];
+  price?: string;
   schedules?: CourseSchedule[];
 }
 
@@ -21,6 +22,7 @@ export const courses: CourseItem[] = [
     title: "Live classes",
     description: "Trade Guru hosts real-time trading rooms with screen-share, Q&A, and execution drills.",
     features: ["Daily scalping rooms", "Voice + screen breakdowns", "Post-trade debriefs"],
+    price: "9000/-",
     schedules: [
       {
         label: "Previous batches",
@@ -40,7 +42,7 @@ export const courses: CourseItem[] = [
     id: "free-course",
     tag: "Free",
     title: "Free course",
-    description: "Starter pack that covers the complete Trade Guru basics with checklists and PDFs.",
+    description: "Starter pack that covers the complete Trade Guru basics. Access private group video links here.",
     features: ["Lifetime access", "Downloadable notes", "Live Q&A drops"],
   },
   {
@@ -53,7 +55,7 @@ export const courses: CourseItem[] = [
   {
     id: "earn-with-us",
     tag: "Earn",
-    title: "Earn with us",
+    title: "Earn with us — Coming Soon",
     description: "Partner program to co-host streams, share playbooks, and monetize your edge together.",
     features: ["Revenue share", "Coaching slots", "Signal co-branding"],
   },

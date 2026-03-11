@@ -52,7 +52,9 @@ function DematPartnersSection() {
                     {partner.logoText}
                   </div>
                   <a
-                    href="#"
+                    href={partner.link || "#"}
+                    target={partner.link ? "_blank" : undefined}
+                    rel={partner.link ? "noopener noreferrer" : undefined}
                     className="flex items-center gap-1 text-xs font-semibold text-text-secondary hover:text-primary transition-colors"
                   >
                     Open account <ArrowRight size={10} />

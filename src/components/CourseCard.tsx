@@ -43,6 +43,11 @@ function CourseCard({ course }: CourseCardProps) {
         <h3 className="relative z-10 mt-3 text-xl font-black leading-tight text-white drop-shadow-sm">
           {course.title}
         </h3>
+        {course.price && (
+          <p className="relative z-10 mt-1 text-lg font-black text-primary">
+            Fees: {course.price}
+          </p>
+        )}
         <p className="relative z-10 mt-2 text-sm leading-relaxed text-text-secondary">{course.description}</p>
 
         {/* Top edge beam */}
